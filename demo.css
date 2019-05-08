@@ -1,0 +1,14 @@
+body{
+    position: relative;
+}
+#demo{
+    width: 100%;
+    max-width: 760px;
+    margin: 30px auto;
+}
+.box{
+    margin: 20px;
+}
+.jTips:hover{
+    cursor: pointer;
+}

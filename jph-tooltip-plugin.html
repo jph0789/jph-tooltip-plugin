@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create jquery tooltip plugin step by step - jQueryPluginHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="demo.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="jph-tooltip.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="jph-tooltip-plugin.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <div class="box">
+            <a href="#" id="testID" data-tip="Hello:)">Hello (Default Blue Theme)</a>
+        </div>
+        <div class="box">
+            <a href="https://www.jquerypluginhub.com" class="testClass" data-tip="jquerypluginhub">JPH (Red Theme)</a>
+        </div>
+        <div class="box">
+            <a href="https://www.jquerypluginhub.com" class="testClass" data-tip="Hover...">HoverMe (Red Theme)</a>
+        </div>
+        <div class="box">
+            <a href="https://www.jquerypluginhub.com" class="website" data-tip="website">Website (Green Theme)</a>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#testID").jphToolTip();
+            $(".testClass").jphToolTip({theme:'red'});
+            $(".website").jphToolTip({theme:'green'});
+        });
+    </script>
+</body>
+</html>
